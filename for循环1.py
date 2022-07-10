@@ -1,0 +1,6 @@
+for data in range(50,201):
+    if data%2==0:
+        print("%d是偶数"%data)
+        pass
+    else:
+        print("%d是奇数"%data)
