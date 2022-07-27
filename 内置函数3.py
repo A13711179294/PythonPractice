@@ -1,0 +1,23 @@
+print(all([]))
+print(all(()))
+print(all([1,2,4,False]))
+print(all([1,2,4]))
+print(all([1,2,0]))
+print(any([]))
+print(any(()))
+print(any([1,2,4,False]))
+print(any(('',0,False)))
+print(any([1,2,4]))
+print(any([1,2,0]))
+li=[10,212,3,4,543,6,7,8129,101]
+tup=(10,212,3,4,543,6,7,8129,101)
+newList=sorted(li,reverse=True)
+newtup=sorted(tup,reverse=False)
+print(newList)
+print(newtup)
+s1=['a','b','c']
+s2=['1','2','3']
+print(list(zip(s1,s2)))
+listObj=['a','b','c']
+for item in enumerate(listObj):
+    print(item)
