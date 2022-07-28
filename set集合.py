@@ -1,0 +1,21 @@
+set1={1,2,3}
+set2={2,3,4}
+dic1={}
+print(type(set1))
+print(type(dic1))
+set1.add('python')
+print(set1)
+# set1.clear()
+# print(set1)
+print(set1.difference(set2))
+print(set1-set2)
+print(set1.intersection(set2))
+print(set1&set2)
+print(set1.union(set2))
+print(set1|set2)
+ret=set1.pop()
+print(set1)
+set1.discard(3)
+print(set1)
+set1.update(set2)
+print(set1)
