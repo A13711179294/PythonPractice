@@ -1,7 +1,11 @@
-from math import gcd
+from math import gcd, sqrt
 
 x, y = map(int, input().split())
-for i in range(x + 1, 0, -1):
-    for z in range(y + 1, x, -1):
-        if gcd(i, z) == x:
-            print(i, z)
+count1 = 0
+for i in range(x, int(sqrt(y * x)) + 1):
+    if x * y % i == 0 and gcd(i, x * y // i) == x:
+        count1 += 2
+
+if x == y:
+    count1 -= 1
+print(count1)
