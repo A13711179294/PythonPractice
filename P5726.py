@@ -1,0 +1,5 @@
+n = int(input())
+ni = list(map(int, input().split()))
+ni.remove(max(ni))
+ni.remove(min(ni))
+print('%.2f' % (sum(ni) / len(ni)))
